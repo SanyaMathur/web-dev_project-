@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <link rel="Stylesheet" href="style.css">
+    <script src="resp.js"></script>
+
+    <title>ORGANICFARMING</title>
+  </head>
+  <body style="background-color: rgb(233, 245, 233);">
+     <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="Img.jpg" alt="logo"></div>
+            <li> <a href="home.html"> Home </a></li>
+            <li> <a href="product.html"> Products</a></li>
+            <li> <a href="program.html"> Programs </a></li>
+            <li> <a href="#contact"> Contact Us </a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+       <div class="burger">
+         <div class="line"></div>
+         <div class="line"></div>
+         <div class="line"></div>
+       </div>
+
+
+        </nav>
+
+     
+     <section class="background firstSection">
+      <div class="box-main">
+           <div class="firstHalf">
+            <p class="text-big"> ORGANIC FARMING</p>
+            <p class="text-small"> Everytime you grow organic you're persuading more farmers to grow organic.
+               Let's get on to Organic farming and food, which gives us a healthy and a prosperous life.
+            </p>
+            </div>
+           <div class="secondHalf">
+            <img src="Img.jpg" alt="Organic Image">
+           </div>
+      </div>
+          
+     </section>
+    
+       <section class="section">
+      <div class="paras"> 
+      <p class="sectionTag text-big">ORGANIC FARMING</p>
+      <p class="sectionSubTag text-small"> 
+        <br>
+         <strong>"AGRICULTURE IS OUR WISEST PURSUIT,BECAUSE IN THE END IT WILL CONTRIBUTE MOST TO REAL WAELTH ,GOOD MORALS AND HAPPINESS"</strong>
+         <br>
+         </p>
+         </div>
+         <div class="thumbnail">
+            <img src="organicttttt.jpg" alt="Organic Image" class="imgFluid">
+         </div>
+      </section>
+
+    
+     <section class="section section-left" >
+      <div class="paras"> 
+      <p class="sectionTag text-big">PRODUCTS OF ORGANIC FARMING</p>
+      <p class="sectionSubTag text-small"> 
+          <br>
+         <strong>THE HIMALAYAN REGION OF "UTTARAKHAND" PRODUCES A RANGE OF CERTIFIED ORGANIC PRODUCTS THAT ARE EXPOSED GLOBAllY:</strong>
+         <ul>
+         <strong>Vermicompost</strong></li><br>
+         <strong>Compost</strong><br>
+         <strong> Cow manure </strong><br>
+         <strong> Jakhiya </strong><br>
+         <strong> Maize </strong><br>
+         <strong> Pigeon pea </strong><br>
+         <strong> Turmeric </strong><br>
+         <strong>Small millets </strong><br>
+         <strong>Mandu ataa</strong><br>
+         <strong>Mustard</strong><br>
+         <ul>
+         </p>
+         </div>
+         <div class="thumbnail">
+            <img src="img5.jpg" alt="Organic Image" class="imgFluid">
+         </div>
+      </section>
+      
+
+     <section class="section">
+      <div class="paras"> 
+      <p class="sectionTag text-big"> PROGRAMS/SCHEMES</p>
+      <p class="sectionSubTag text-small"> 
+         <br>
+          <strong>'Ganga toxin-free'</strong><br>
+          <strong>'Namami Gange or National Mission for Clean Ganga (NMCG)'</strong>.<br>
+          <strong>Uttarakhand Blooms as an Organic State, Gets Rs 1500 Crore Boost from Centre!</strong><br>
+       </p>
+       </div>
+         <div class="thumbnail">
+            <img src="farming.jpg" alt="Organic Image" class="imgFluid">
+         </div>
+       </section>
+
+      
+     <section class="section section-left">
+      <div class="paras"> 
+      <p class="sectionTag text-big">ORGANIC FARMING A BOON ! </p>
+      <p class="sectionSubTag text-small"> 
+        <br>
+        <strong> HOW CAN AN INDIVIDUAL SUPPORT ORGANIC FARMING ? </strong>
+        <br>Space is not always an issue for an organic farm. If you have a wide-stretching garden or terrace, it serves as a benefit.
+        Prepare the soil with cow dung and nutritious compost.
+        Look out for weeds, pests after planting. Once the infestation happens, it isn’t very easy to recover.
+        Everyday care is a must. Watering with cow dung solution, natural fertilisers etc shouldn’t be skipped.
+        Opt for plants that require more sunlight and need less water.
+        </p>
+         </div>
+         <div class="thumbnail">
+         <img src="famm.jpg" alt="Organic Image" class="imgFluid">
+         </div>
+      </section>
+
+
+       <section class="contact" id="contact">
+         <h2 class="text-center"> Contact Us</h2>
+         <div class="form">
+            <form onsubmit="sendEmail(); reset(); return false;">
+             <input type ="text" name="name" id="name" placeholder="Enter your name" required>
+              <input type ="text" name="phone" id="phone" placeholder="Enter your phone" required>
+               <input type ="email" name="email" id="email" placeholder="Enter your email" required>
+               <input type="text" name="query" id="query" placeholder="Enter your query" required>
+              <button class="btn btn-dark"> Submit </button>
+            </form>
+      </div>
+     
+      <script src=" https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+          function sendEmail(){
+            Email.send({
+               SecureToken: "7fdc37ed-922d-4667-9929-62882a2f3661",
+                  
+                     
+                    To : 'sanyamathur28@gmail.com',
+                    
+                     From : 'sanyamathur28@gmail.com',  
+                     Subject : "New Contact Form Enquiry",
+                     Body : "Name: "+ document.getElementById("name").value
+                     + "<br> email: " + document.getElementById("email").value 
+                     + "<br> phone no: " + document.getElementById("phone").value 
+                     + "<br> Query:  " + document.getElementById("query").value
+                  }).then(
+                   message => alert("Message sent successfully")
+               );
+          }
+      </script>
+      </section>
+       
+
+
+      <footer class="background">
+         <p class="text-footer">
+         Copyright &copy; 2022 ORGANICFARMING.com - All rights reserved
+     </p>
+     </footer>
+     <script src="resp.js"></script>
+
+     
+
+  </body>
+  </html>
+
