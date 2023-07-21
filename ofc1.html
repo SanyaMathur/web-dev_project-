@@ -1,0 +1,30 @@
+<html>
+<head> 
+<title> User login</title>
+</head>
+<body>
+<form>
+<label for="Name">Username</label>
+<input type="text" id="uname" name="uname">
+<br> <br>
+<label for="password">Password</label>
+<input type="password" id="pass" name="pass">
+<br> <br>
+<a href= "next.html"> 
+<button type="button" onclick="show()"> Send </button>
+</a> 
+</form>
+</body>
+<script>
+function show() 
+{
+alert("submitted successfully\n");
+var x=document.getElementById("uname").value;
+var y=document.getElementById("pass").value; 
+let nm="hello" + " " + x + " " + y;
+alert(nm);
+localStorage.setItem("x",nm);
+//window.open("file:///D:/next.html"); 
+}
+</script>
+</html>
