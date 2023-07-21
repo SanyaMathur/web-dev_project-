@@ -1,0 +1,328 @@
+<html>
+<head>
+<title> HEALTH FORM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="Stylesheet" href="new2.css">
+
+</head>
+<body>
+<h3> HEALTH PORTAL </h3>
+<form onclick="submit()" method="post">
+
+<div>
+<fieldset>
+<legend>Customer Information </legend>
+<label>Title: </label>
+<select name="title" id="title" width="20px">
+<option value="Mr">Mr</option>
+<option value="Mrs">Mrs</option>
+<option value="Miss">Miss</option>
+</select>
+<br><br>
+<label>Full Name: </label>
+<input type="text" name="name">
+<br><br>
+
+<label>Birth Date:</label>
+<input type="date" name="date">
+<br><br>
+
+<label> Age:</label>
+<input type="number" name="age">
+<br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender">
+<label>Male</label>
+<input type="radio" name="gender">
+<label>Female</label>
+<br><br>
+
+<label>Email:</label>
+<input type="email" name="email">
+<br><br>
+</fieldset>
+<br><br>
+
+<fieldset>
+<legend>Address</legend>
+<label>Address Line1:</label>
+<input type="text" name="address">
+<br> <br>
+<label>Address Line2:</label>
+<input type="text" name="address">
+<br> <br>
+<label> State:</label>
+<input type="text" name="address">
+<br> <br>
+<label> City: </label>
+<input type="text" name="address">
+<br><br>
+<label> Pincode: </label>
+<input type="number" name="address">
+
+<input type="checkbox" name="address" id="checkadd" onchange="function()">
+<label>Corresponding Addess same as Permanent Address</label>
+<br><br>     
+<label>Address Line1:</label>
+<input type="text" name="address">
+<br> <br>
+<label>Address Line2:</label>
+<input type="text" name="address">
+<br> <br>
+<label> State:</label>
+<input type="text" name="address">
+<br> <br>
+<label> City: </label>
+<input type="text" name="address">
+<br><br>
+<label> Pincode: </label>
+<input type="number" name="address">
+</fieldset>
+<br><br>
+
+<fieldset>
+<legend> Extra Information</legend>
+<label>Select members:</label>
+<select name="select members" id="select members" width="80px">
+<option value="1 member">1 member</option>
+<option value="2 member">2 member</option>
+<option value="3 member">3 member</option>
+<option value="More member">More member</option>
+</select>
+<br><br>
+
+<label>Gross Monthly Income:</label>
+<input type="number" name="gross monthly income">
+<br><br>
+
+<label>Pre Existing disease:</label>
+<select name="pre existing disease" id="pre existing disease"  width="80px">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<br><br>
+
+<label> Medical Problem:</label>
+<select name="Medical Problem" id="Mediacal Problem"  width="80px">
+<option value="">Select a Medical Problem</option>
+<option value="Pneumonia">Pneumonia</option>
+<option value="Viral">Viral</option>
+<option value="Jaundice">Jaundice</option>
+<option value="Lung cancer">Lung Cancer</option>
+<option value="Heart Disease">Heart Disease</option>
+<option value="Brain Tumor">Brain Tumor</option>
+<option value="Throat Infection">Throat Infection</option>
+<option value="Others">Others</option>
+</select>
+<br><br>
+
+<label for="Accidental Hospitalization expense">Accidenatl Hospitalization Expense:</label>
+<select name="Accidental Hospitalization expense" id="Accidental Hospitalization expense" width="50px">
+<option value="">Select Accidenatl Hospitalization Expense </option>
+<option value="200000">2 Lac</option>
+<option value="300000">3 Lac</option> 
+<option value="400000">4 Lac</option>
+<option value="500000">5 Lac</option>
+<option value="600000">6 Lac</option> 
+<option value="700000">7 Lac</option>
+<option value="800000">8 Lac</option>
+<option value="900000">9 Lac</option>
+<option value="1000000">10 Lac</option>
+<option value="1100000">11 Lac</option>
+<option value="1200000">12 Lac</option>
+<option value="1300000">13 Lac</option>
+<option value="1400000">14 Lac</option>
+<option value="1500000">15 Lac</option> 
+<option value="1600000">16 Lac</option>
+<option value="1700000E">17 Lac</option>
+<option value="1800000">18 Lac</option> 
+<option value="1900000">19 Lac</option>
+<option value="2000000">20 Lac</option>
+<option value="2100000">21 Lac</option>
+<option value="2200000">22 Lac</option>
+<option value="2300000">23 Lac</option>
+<option value="2400000">24 Lac</option>
+<option value="2500000">25 Lac</option>
+</select>
+<br><br>
+
+<label for="EMI Payment Cover">EMI Payment Cover:</label>
+<select name="EMI Payment Cover" id="EMI Payment Cover" width="50px">
+<option value="">Select EMI Payment Cover </option>
+<option value="50000">50000 (50 k)</option>
+<option value="75000">75000 (75 k)</option>
+<option value="100000">100000 (1 Lac)</option>
+<option value="200000">200000 (2 Lac)</option>
+<option value="300000">300000 (3 Lac)</option>
+<option value="400000">400000 (4 Lac)</option>
+<option value="500000">500000 (5 Lac)</option>
+</select>
+<br><br>
+
+<label for="Road Ambulance Cover">Road Ambulance Cover:</label>
+<select name="Road Ambulance Cover" id="Road Ambulance Cover" width="50px">
+<option value="">Select Road Ambulance Cover </option>
+<option value="50000">50000 (50 k)</option>
+</select>
+<br><br>
+
+<label for="Occupation type">Occupation:</label>
+<select name="Occupation type" id="Occupation type" width="50px">
+<option value=" Select an occupation type">Select occupation type</option>
+<option value="Accountants">Accountants</option>
+<option value="Doctors">Doctors</option> 
+<option value="Lawyers">Lawyers</option>
+<option value="Architects">Architects</option>
+<option value="IT Professional">IT Professional</option> 
+<option value="Consulting Engineers">Consulting Engineers</option>
+<option value="Teachers">Teachers</option>
+<option value="Bankers, Clerical Staff">Bankers, Clerical Staff</option>
+<option value="Persons engaged in administrative functions">Persons engaged in administrative functions</option>
+<option value="Agriculture">Agriculture</option>
+<option value="Housewife">Housewife</option>
+<option value="Student">Student</option>
+<option value="Farmer">Farmer</option>
+<option value="Builders">Builders</option>
+<option value="Drivers">Drivers</option>
+<option value="All persons engaged in manual labour">All persons engaged in manual labour</option>
+<option value="Cash Carrying Employees">Cash Carrying Employees</option>
+<option value="Garage and Motor Mechanics">Garage and Motor Mechanics</option>
+<option value="Machine Operators">Machine Operators</option>
+<option value="Professional Athletics and Sportsmen">Professional Athletics and Sportsmen</option>
+<option value="Carpenter">Carpenter</option>
+<option value="Insurance Advisor">Insurance Advisor</option>
+<option value="Retired Persons">Retired Persons</option>
+<option value="Electricians">Electricians</option>
+<option value="Others">Others</option>
+</select>
+<br><br>
+
+<label for="room type">Room type:</label>
+<select name="room type" id="room type">
+<option value="select a room type">Select a room type</option>
+<option value="A/C">A/C</option>
+<option value="Non A/C">Non A/C</option>
+</select>
+<br><br>
+
+<label for="Payment type">Payment type:</label>
+<select name="Payment type" id="Payment type">
+<option value="select a payment type">Select a payment type</option>
+<option value="Cash">Cash</option>
+<option value="Credit/Debit Card">Credit/Debit Card</option>
+<option value="Coupons">Coupons</option>
+</select>
+<br><br>
+
+<label for="Doctor type">Doctor type:</label>
+<select name="Doctor type" id="Doctor type">
+<option value="select a doctor type">Select a doctor type</option>
+<option value="Gynalogist">Gynalogist</option>
+<option value="Credit/Debit Card">Orthosurgeon</option>
+<option value="Coupons">Dentist</option>
+</select>
+<br><br>
+</fieldset>
+
+<br><br>
+<fieldset>
+<legend> Premium Calculation </legend>
+<table border="">
+ <tr>
+    <th> Sr. No.</th>
+    <th>Customer Name</th>
+    <th>Relation</th>
+	<th>DOB</th>
+	<th>Nominee Name</th>
+	<th>Nominee Relation</th>
+  <tr>
+  <tr>
+    <td>  1. </td>
+    <td>
+	<input type="text" name="customer name" id="customer name">
+	</td>
+	
+	<td>
+	<select name="Relation type" id="Relation type">
+	<option value="SELF">Self</option>
+	<option value="SPOUSE">Spouse</option>
+	<option value="SON">Son</option>
+	<option value="DAUGHTER">Daughter</option>
+	<option value="FATHER">Father</option>
+	<option value="MOTHER">Mother</option>
+	</select>
+	</td>
+	
+	<td>
+	<input type="date" name="date">
+	</td>
+	
+	<td>
+	<input type="text" name="nominee name" placeholder="nominee">
+	</td>
+	
+	<td>
+	<select name="Nominee Relation" id="Nominee Relation">
+   <option value="SELF" name="fhc_self">Self</option>
+   <option value="SPOUSE">Spouse</option>
+   <option value="SON">Son</option>
+   <option value="DAUGHTER">Daughter</option>
+   <option value="FATHER">Father</option>
+   <option value="MOTHER">Mother</option>
+   </select>
+   </td>
+<tr>
+</table>
+
+<br>
+<button type="button" id="calci" class="calci" onclick="calculatepremium()">Calculate premium</button>
+<br>
+</fieldset>
+<br><br>
+
+<fieldset>
+<legend> C-KYC</legend>
+<label> Pan Card Number:</label>
+<input type="number" name="pan card number">
+<br><br>
+<label> C-KYC Number:</label>
+<input type="number" name="C-KYC number">
+<br><br>
+<label> C-KYC Status:</label>
+<input type="text" name="C-KYC Status">
+<br><br>
+<label> C-KYC Link:</label>
+<input type="text" name="C-KYC Link">
+</fieldset>
+
+<br><br>
+
+<input type="submit" value="send data" onclick="submit()">
+<input type="reset" value="reset data">
+
+<section>
+<footer class="background">
+ <p class="text-footer"> Copyright &copy; 2023- All rights reserved</p>
+</footer>
+
+</form>
+<br><br>
+
+<script type="text/javascript">
+            $(document).ready(function() {
+                $('input[type="checkbox"]').click(function() {
+                    var inputValue = $(this).attr("checkadd");
+                    $("." + addresss).toggle();
+  
+                });
+            });
+function submit()
+{
+alert("form submitted successfullt\n");
+};
+        </script>
+
+</body>
+</html>
